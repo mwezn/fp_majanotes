@@ -40,6 +40,11 @@ We added a login system after we had finished the requirements for the project:
 
 ![](github/loginpage.png)
 
+# Testing
+
+To run our test files type `npm test` 
+To show % coverage of all tests run `npm test -- --coverage`
+
 # License
 [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
