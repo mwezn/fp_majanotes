@@ -1,0 +1,39 @@
+[
+  {
+    "id": 2,
+    "title": "Hello world",
+    "note": "Hi",
+    "color": "pink",
+    "formColor": "pink",
+    "author": "mwezn",
+    "gif": "https://media2.giphy.com/media/28GHfhGFWpFgsQB4wR/giphy-downsized.gif?cid=0d81c17dzckaizn1bs0ubka3ldyj6dgp2vo9og2f088jm7l6&rid=giphy-downsized.gif&ct=g"
+  },
+  {
+    "id": 0,
+    "title": "Mwezn",
+    "note": "Funny cats vs dogs jedi",
+    "color": "white",
+    "formColor": "white",
+    "author": "mwezn",
+    "gif": "https://media2.giphy.com/media/xBAreNGk5DapO/giphy.gif?cid=0d81c17dh0rwpc4gh5k4xqfxhrgjsab0bcadba8g060qmrwg&rid=giphy.gif&ct=g",
+    "heart": 3
+  },
+  {
+    "id": 3,
+    "title": "rrandom",
+    "note": "Hiii",
+    "color": "white",
+    "formColor": "white",
+    "gif": "https://media3.giphy.com/media/2C2qwckZzyiz8UzvzK/giphy.gif?cid=0d81c17dx3et8hf2euis4qjdez6i27bz7nqfe91dug6ydrrq&rid=giphy.gif&ct=g"
+  },
+  {
+    "id": 1,
+    "title": "Mwezn",
+    "note": "cat wiggle lol",
+    "color": "cornflowerblue",
+    "formColor": "blue",
+    "author": "mwezn",
+    "gif": "https://media2.giphy.com/media/Mr5yS9nR4kAda/giphy.gif?cid=0d81c17d03fs6jlxm5pdwsme9316ds0zdm342dkok02mdytx&rid=giphy.gif&ct=g",
+    "heart": 4
+  }
+]

@@ -49,8 +49,15 @@ describe('API server', () => {
 
 it('retrieves a note by id', (done) => {
 		request(api)
-				.get('/data/1').expect(200).expect({"id": 1,"title": "jnedf","note": "ndlmlsdm.d", "color": 'palegreen',
-				"neutral": 2}, done);
+				.get('/data/1').expect(200).expect({
+					"id": 1,
+					"title": "Mwezn",
+					"note": "cat wiggle lol",
+					"color": "cornflowerblue",
+					"formColor": "blue",
+					"author": "mwezn",
+					"gif": "https://media2.giphy.com/media/Mr5yS9nR4kAda/giphy.gif?cid=0d81c17d03fs6jlxm5pdwsme9316ds0zdm342dkok02mdytx&rid=giphy.gif&ct=g"
+				  }, done);
 	});
 
 it('responds to non existing paths with 404', (done) => {
