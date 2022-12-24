@@ -1,5 +1,7 @@
 const app = require('./server.js')
 
-app.listen(3000, () => {
-    console.log("MajaNotes listening on port 3000")
+const PORT=process.env.PORT;
+
+app.listen(PORT||8080, () => {
+    console.log("MajaNotes listening on port 8080")
 });
