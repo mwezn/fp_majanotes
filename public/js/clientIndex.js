@@ -3,11 +3,14 @@ const host = window.location.host;
 const createButton = document.querySelector("#createButton");
 const newMajanote = document.querySelector("#newMajanote");
 const errorMessages = document.querySelector("#errorMessages");
+const container=document.querySelector('.container');
+const stickycontainer=document.querySelector('.sticky-container')
 
 fetch(`${protocol}//${host}/data`)
 	.then(resp => resp.json())
 	.then(data => renderNotes(data))
-   
+
+
 if (errorMessages.textContent.length > 0) {
     newMajanote.style.display = "initial";
 } else {
@@ -20,10 +23,23 @@ document.getElementById('logoutButton').addEventListener('click', ()=>{
     window.location.href="/"
 })
 
-createButton.addEventListener('click', () => {
+/*createButton.addEventListener('click', () => {
     if (newMajanote.style.display === 'none') {
             newMajanote.style.display = "initial";
+            alert("Box opened")
     } else {
             newMajanote.style.display = "none";
     }
+}); */
+
+createButton.addEventListener('click', () => {
+    stickycontainer.classList.toggle('active');
+    console.log(stickycontainer.classList)
+    if(stickycontainer.classList.contains('active')) createButton.innerHTML='x'
+    else {
+        createButton.innerHTML='+ create'
+    }
+    
+
 });
+

@@ -54,6 +54,35 @@ figure {
 	/* width: 115%; */
 	height: 115%;
 }  
+.sticky-container {
+	display: block;
+	position: relative;
+	top:-800px;
+	transition: all 1s;
+	opacity:0;
+	z-index: 10;
+}
+.sticky-container.active {
+	top:0px;
+	opacity:1;
+	
+}
+.container {
+	display:block;
+	position: relative;
+	transition: all 2s;
+}
+.container.active {
+	top:500px;
+}
+
+#notesGrid {
+	margin-top: 123px;
+	margin-left: 0;
+	border: 2px solid black;
+	top:-400px;
+	position: relative;
+}
 
 
 @media screen and (max-width: 1400px) {
@@ -67,6 +96,7 @@ figure {
 	#newForm {
 		font-size: 19px;
 	}
+	
 }
 
 @media screen and (max-width: 1198px) {
@@ -120,13 +150,6 @@ figure {
   }
   }
 
-
-@media screen and (max-width: 988.89px) {
-	#notesGrid {
-		margin-top: 123px;
-		margin-left: 0;
-	}
-  }
   
 
   @media screen and (max-width: 519px) {

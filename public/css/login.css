@@ -18,15 +18,18 @@ h1 {
 div.container {
 	margin-top: 9%;
 	display:flex;
+	flex-direction: column;
 	gap: 20%;
 	justify-content: center;
+	align-items: center;
 	padding: 20px;
 }
-@media screen and (max-width: 511px) {
+
+@media screen and (min-width: 900px) {
 	div.container {
 		margin-top: 9%;
 		display:flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 20%;
 		justify-content: center;
 		align-items: center;
@@ -35,7 +38,4 @@ div.container {
 
 }
 
-form {
-	font-size: 30px;
-	margin-right: 100px;
-}
+
