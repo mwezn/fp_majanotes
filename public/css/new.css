@@ -67,13 +67,14 @@ figure {
 	opacity:1;
 	
 }
-.container {
+.container2 {
 	display:block;
 	position: relative;
-	transition: all 2s;
+	transition: all 1s;
+	opacity: 1;
 }
-.container.active {
-	top:500px;
+.container2.active{
+	opacity: 0.2;
 }
 
 #notesGrid {

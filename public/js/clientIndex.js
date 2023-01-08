@@ -3,7 +3,7 @@ const host = window.location.host;
 const createButton = document.querySelector("#createButton");
 const newMajanote = document.querySelector("#newMajanote");
 const errorMessages = document.querySelector("#errorMessages");
-const container=document.querySelector('.container');
+const container=document.querySelector('.container2');
 const stickycontainer=document.querySelector('.sticky-container')
 
 fetch(`${protocol}//${host}/data`)
@@ -23,17 +23,10 @@ document.getElementById('logoutButton').addEventListener('click', ()=>{
     window.location.href="/"
 })
 
-/*createButton.addEventListener('click', () => {
-    if (newMajanote.style.display === 'none') {
-            newMajanote.style.display = "initial";
-            alert("Box opened")
-    } else {
-            newMajanote.style.display = "none";
-    }
-}); */
 
 createButton.addEventListener('click', () => {
     stickycontainer.classList.toggle('active');
+    container.classList.toggle('active')
     console.log(stickycontainer.classList)
     if(stickycontainer.classList.contains('active')) createButton.innerHTML='x'
     else {
